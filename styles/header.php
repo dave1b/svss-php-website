@@ -31,7 +31,7 @@
 <div class="headerpadding"></div>
 <h3 id="motto">Wir machen dich fit!</h3>
 
-sfsdf
+
 </header>
 
 <nav>

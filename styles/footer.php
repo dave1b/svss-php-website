@@ -10,7 +10,7 @@
     <a class="btn" href="https://www.linkedin.com/in/dave-b-a7a158199">
         <i class="fab fa-linkedin-in"></i>
     </a>
-    <a class="btn" href="mailto:dave.brunner@outlook.com"> 
+    <a class="btn" href="mailto:dave.brunner@protonmail.ch"> 
         <i class="fas fa-envelope-open-text"></i>
     </a>
 </div>
@@ -18,3 +18,4 @@
 
 </footer>
 </html>
+
