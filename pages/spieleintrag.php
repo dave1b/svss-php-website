@@ -18,7 +18,7 @@ if(isset($_POST["submit"])){
 
 
         // Passwort überprüfen
-        if($_POST["password"] == "hierlksdjfökös"){
+        if($_POST["password"] == "moin"){
         
         // Variablen  zuweisen
         $date = mysqli_real_escape_string($conn, $_POST["date"]);

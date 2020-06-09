@@ -1,7 +1,7 @@
 
 var i = Math.floor(Math.random() * 8); 
 
-console.log("hello");
+//console.log("hello");
 
 
 var images = [];

@@ -2,7 +2,7 @@
 
 
 
-$errors = array("email" => "", "pizza" => "", "ingredients" => "");
+
 $vorname = $nachname = $email = $text = "";
 
 if(isset($_POST["submit"])){
