@@ -1,12 +1,12 @@
 <?php include"../styles/header.php";
    
-    if(empty($IPclient)) {
-    $ip_client = $_SERVER["REMOTE_ADDR"];
-    }
+    
+   $ip = $_SERVER["REMOTE_ADDR"]; 
+    
    
     
     // Query definieren
-    $sql = "INSERT INTO visitors(ip_client) VALUES ('$ip_client')";
+    $sql = "INSERT INTO visitors(ip_client) VALUES ('$ip')";
     mysqli_query($conn, $sql);
 
 ?>
