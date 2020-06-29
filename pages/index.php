@@ -1,4 +1,15 @@
-<?php include"../styles/header.php" ?>
+<?php include"../styles/header.php";
+   
+    if(empty($IPclient)) {
+    $ip_client = $_SERVER["REMOTE_ADDR"];
+    }
+   
+    
+    // Query definieren
+    $sql = "INSERT INTO visitors(ip_client) VALUES ('$ip_client')";
+    mysqli_query($conn, $sql);
+
+?>
 <style> .homepage  { border-bottom: solid #385769; color: #385769; } </style><main>
 
 <br>
