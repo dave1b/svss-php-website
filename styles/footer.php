@@ -14,8 +14,7 @@
         <i class="fas fa-envelope-open-text"></i>
     </a>
 </div>
-<p class="copyright"><i class="fas fa-copyright"></i> Copyright - 2020</p>
-
+<p class="copyright"><i class="fas fa-copyright"></i> Copyright - 2020 &nbsp; - &nbsp; <a href="admin.php" id="adminbtn">Admin</a></p>
 </footer>
 </html>
 

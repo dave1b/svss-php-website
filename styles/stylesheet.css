@@ -472,7 +472,7 @@ form label {
   border-radius: 10px;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 1.8em;
-  margin-bottom: 8%;
+  margin-bottom: 2%;
 }
 
 .gästebuchTitle {
@@ -555,7 +555,7 @@ form label {
 }
 /* Eintragfelder  */
 
-#date, #sport, #home_team, #guest_team, #home_points, #guest_points, #password {
+#date, #sport, #home_team, #guest_team, #home_points, #guest_points, #password, #pwd, #username {
   margin: 5px;
   margin-left: 86px;
   width: 220px;
@@ -586,6 +586,7 @@ form label {
   margin-left: 87px;
 }
 
+
 /* ---------------------  Diashow ----------------------------------- */
 
 .img-container {
@@ -600,6 +601,40 @@ form label {
   vertical-align: center;
   overflow: hidden;
   border-radius: 2px;
+}
+
+
+/* ------------------- Admin -----------------------------------------------*/
+#adminbtn {
+  color: rgb(26, 39, 61);
+  
+  margin-top: -18px;
+  padding: 30px 0;
+  color: rgb(71, 71, 71);
+  font-weight: 700
+}
+#adminbtn:hover {
+  color: #07308896;
+}
+
+.visitor {
+  border: solid 1px grey; 
+  border-radius: 3px;
+  line-height: 0.3em;
+  padding-left: 3%;
+  margin: 2px;
+  text-align: left;
+  width: 49%;
+  display:inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #8ab9f733;
+}
+
+#pwd {
+  margin-left: 78px;
+}
+#username {
+  margin-left: 30px;
 }
 
 
@@ -761,7 +796,7 @@ form label {
   font-size: 0.85em;
 }
 
-#sport, #home_team, #guest_team, #home_points, #guest_points, #password, #date {
+#sport, #home_team, #guest_team, #home_points, #guest_points, #password, #date, #pwd, #username {
   
   margin-left: 5px;
   margin-right: 0;
@@ -769,7 +804,7 @@ form label {
   
 }
 
-#spieleintrag-form {
+#spieleintrag-form, #login {
   text-align: center;
 }
 

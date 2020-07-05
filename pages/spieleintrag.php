@@ -2,7 +2,7 @@
 
 $error = "<br>";
 $date = $sport = $home_team = $guest_team = $home_points = $guest_points = "";
-
+$logged_in = false;
 
 if(isset($_POST["submit"])){
     
@@ -15,10 +15,21 @@ if(isset($_POST["submit"])){
         
 
 
+        $sql = "SELECT pwd FROM admin ORDER BY id DESC";
+
+        $query = mysqli_query($conn, $sql);
+    
+        while($result = mysqli_fetch_array($query)){
+        
+            $pwd_db =  $result["pwd"];
+            if($pwd_db == $_POST["password"]){
+                $logged_in = true;
+            }
+        }
 
 
         // Passwort überprüfen
-        if($_POST["password"] == "moin"){
+        if($logged_in == true){
         
         // Variablen  zuweisen
         $date = mysqli_real_escape_string($conn, $_POST["date"]);
@@ -43,12 +54,12 @@ if(isset($_POST["submit"])){
             header("Location: spielergebnisse.php");
             
         }
-    }
-    else {
+        }
+        else {
 
         
         $error = "Das Passwort ist falsch.";
-    }
+        }
          
 
     

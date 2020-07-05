@@ -10,7 +10,8 @@
     mysqli_query($conn, $sql);
 
 ?>
-<style> .homepage  { border-bottom: solid #385769; color: #385769; } </style><main>
+<style> .homepage  { border-bottom: solid #385769; color: #385769; } </style>
+<main>
 
 <br>
 
