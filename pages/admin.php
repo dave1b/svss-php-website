@@ -5,7 +5,7 @@ $username = " ";
 $pwd = " "; 
 
 
-
+//Log in Vorgang
 if(isset($_POST["submit"])){
     
     $tried = true;
@@ -20,17 +20,11 @@ if(isset($_POST["submit"])){
     
         $username_db =  $result["username"];
         $pwd_db =  $result["pwd"];
-
-        
-        
         if($username == $username_db && $pwd == $pwd_db){
             $logged_in = true;
         }
 
-
     }
-
-
 
 }
 
@@ -39,6 +33,7 @@ if(isset($_POST["submit"])){
 
 if($logged_in == false){?>
 
+<!-- If not logged in -->
 <main>
 <article id="articleForm">
     <h3 id="pageTitleForm">Adminseite</h3>
@@ -70,7 +65,7 @@ if($logged_in == false){?>
 <?php }
 else { ?>
 
-
+<!-- If logged in -->
 <main>
 <h2 class="pageTitle gästebuchTitle">Adminseite</h2>
 
