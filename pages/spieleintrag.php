@@ -12,7 +12,8 @@ if(isset($_POST["submit"])){
         $guest_team = $_POST["guest_team"];
         $home_points = $_POST["home_points"];
         $guest_points = $_POST["guest_points"];
-        
+        $pwd1 = $_POST["password"]; 
+	$pwd =  hash ( "md5" ,  $pwd1 );
 
 
         $sql = "SELECT pwd FROM admin ORDER BY id DESC";
@@ -21,8 +22,10 @@ if(isset($_POST["submit"])){
     
         while($result = mysqli_fetch_array($query)){
         
+
+		
             $pwd_db =  $result["pwd"];
-            if($pwd_db == $_POST["password"]){
+            if($pwd_db == $pwd){
                 $logged_in = true;
             }
         }
