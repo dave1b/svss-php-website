@@ -11,7 +11,7 @@ if(isset($_POST["submit"])){
     $tried = true;
     $username = $_POST["username"];
     $pwd1 = $_POST["pwd"]; 
-    $pwd =  hash ( "md5" ,  $pwd1 );
+    $pwd =  hash ( "sha3-512" ,  $pwd1 );
     $sql = "SELECT username, pwd FROM admin ORDER BY id DESC";
 
     $query = mysqli_query($conn, $sql);
