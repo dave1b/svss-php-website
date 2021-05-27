@@ -13,7 +13,7 @@ if(isset($_POST["submit"])){
         $home_points = $_POST["home_points"];
         $guest_points = $_POST["guest_points"];
         $pwd1 = $_POST["password"]; 
-	$pwd =  hash ( "md5" ,  $pwd1 );
+        $pwd =  hash ( "sha3-512" ,  $pwd1 );
 
 
         $sql = "SELECT pwd FROM admin ORDER BY id DESC";
